@@ -1,0 +1,427 @@
+/**
+ * SkyServers EAN Barcode Finder - Admin Styles
+ *
+ * @package SkyServersEanBarcodeFinder
+ * @since   1.0.0
+ */
+
+/* Layout */
+.skyean-wrap {
+	max-width: 1200px;
+}
+
+.skyean-subtitle {
+	font-size: 14px;
+	color: #666;
+	margin-top: -10px;
+}
+
+/* Stats */
+.skyean-stats {
+	display: flex;
+	gap: 15px;
+	margin: 20px 0;
+}
+
+.skyean-stat-card {
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	padding: 20px 25px;
+	flex: 1;
+	text-align: center;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.skyean-stat-card.skyean-stat-success {
+	border-left: 4px solid #46b450;
+}
+
+.skyean-stat-card.skyean-stat-warning {
+	border-left: 4px solid #ffb900;
+}
+
+.skyean-stat-number {
+	display: block;
+	font-size: 32px;
+	font-weight: 700;
+	color: #23282d;
+	line-height: 1.2;
+}
+
+.skyean-stat-label {
+	display: block;
+	font-size: 13px;
+	color: #666;
+	margin-top: 5px;
+}
+
+/* Sections */
+.skyean-section {
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	padding: 25px;
+	margin: 20px 0;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.skyean-section h2 {
+	margin-top: 0;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #eee;
+}
+
+/* Toolbar */
+.skyean-toolbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 15px;
+	flex-wrap: wrap;
+}
+
+.skyean-toolbar-left {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.skyean-toolbar-right {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+}
+
+/* Table */
+.skyean-col-thumb { width: 60px; }
+.skyean-col-name { width: 30%; }
+.skyean-col-sku { width: 12%; }
+.skyean-col-ean { width: 25%; }
+.skyean-col-actions { width: 20%; }
+
+#skyean-products-table img.skyean-thumb {
+	width: 40px;
+	height: 40px;
+	object-fit: cover;
+	border-radius: 4px;
+}
+
+.skyean-loading {
+	text-align: center;
+	padding: 40px !important;
+	color: #666;
+}
+
+.skyean-error-msg {
+	color: #b00 !important;
+	background: #fff5f5 !important;
+}
+
+/* EAN display */
+.skyean-ean-cell {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.skyean-ean-input {
+	width: 140px !important;
+	font-family: monospace;
+	font-size: 13px;
+}
+
+.skyean-ean-saved {
+	font-family: monospace;
+	font-size: 13px;
+	background: #e7f7e7;
+	padding: 4px 8px;
+	border-radius: 4px;
+	color: #2e7d32;
+}
+
+/* Action buttons */
+.skyean-btn-search {
+	background: #0073aa;
+	color: #fff;
+	border: none;
+	padding: 4px 12px;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 12px;
+	white-space: nowrap;
+}
+
+.skyean-btn-search:hover {
+	background: #005a87;
+}
+
+.skyean-btn-save {
+	background: #46b450;
+	color: #fff;
+	border: none;
+	padding: 4px 12px;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 12px;
+}
+
+.skyean-btn-save:hover {
+	background: #3a9a42;
+}
+
+.skyean-btn-manual {
+	background: #666;
+	color: #fff;
+	border: none;
+	padding: 4px 10px;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 12px;
+}
+
+/* Search results */
+.skyean-results-row td {
+	background: #f9f9ff !important;
+	padding: 10px 15px !important;
+}
+
+.skyean-results-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.skyean-result-item {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	padding: 8px 12px;
+	margin: 5px 0;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: all 0.15s;
+}
+
+.skyean-result-item:hover {
+	border-color: #0073aa;
+	background: #f0f6fc;
+}
+
+.skyean-result-img {
+	width: 40px;
+	height: 40px;
+	object-fit: cover;
+	border-radius: 4px;
+	background: #eee;
+}
+
+.skyean-result-info {
+	flex: 1;
+}
+
+.skyean-result-name {
+	font-weight: 600;
+	font-size: 13px;
+}
+
+.skyean-result-meta {
+	font-size: 11px;
+	color: #666;
+}
+
+.skyean-result-ean {
+	font-family: monospace;
+	font-size: 14px;
+	font-weight: 700;
+	color: #0073aa;
+	background: #e8f0fe;
+	padding: 4px 10px;
+	border-radius: 4px;
+}
+
+.skyean-no-results {
+	color: #b00;
+	font-style: italic;
+	padding: 10px 0;
+}
+
+/* Progress bar */
+#skyean-bulk-progress {
+	margin: 15px 0;
+	padding: 15px;
+	background: #f8f9fa;
+	border-radius: 8px;
+	border: 1px solid #e0e0e0;
+}
+
+.skyean-progress-bar {
+	height: 24px;
+	background: #e0e0e0;
+	border-radius: 12px;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+.skyean-progress-fill {
+	height: 100%;
+	background: linear-gradient(90deg, #0073aa, #00a0d2);
+	border-radius: 12px;
+	transition: width 0.3s ease;
+}
+
+.skyean-progress-text {
+	font-size: 13px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.skyean-text-success { color: #46b450; font-weight: 600; }
+.skyean-text-warning { color: #dc3232; font-weight: 600; }
+
+/* Pagination */
+.skyean-pagination {
+	margin-top: 20px;
+}
+
+.skyean-pag-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 15px;
+	flex-wrap: wrap;
+	padding: 10px 0;
+}
+
+.skyean-pag-info {
+	font-size: 13px;
+	color: #555;
+	white-space: nowrap;
+}
+
+.skyean-pag-buttons {
+	display: flex;
+	gap: 4px;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.skyean-pag-buttons button {
+	min-width: 36px;
+	height: 34px;
+	padding: 0 10px;
+	border: 1px solid #ddd;
+	background: #fff;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 13px;
+	white-space: nowrap;
+	transition: all 0.15s;
+}
+
+.skyean-pag-buttons button.active {
+	background: #0073aa;
+	color: #fff;
+	border-color: #0073aa;
+	font-weight: 600;
+}
+
+.skyean-pag-buttons button:hover:not(.active):not(.disabled) {
+	background: #f0f0f0;
+	border-color: #0073aa;
+}
+
+.skyean-pag-buttons button.disabled {
+	opacity: 0.4;
+	cursor: not-allowed;
+	pointer-events: none;
+}
+
+.skyean-pag-dots {
+	padding: 0 6px;
+	color: #999;
+	font-size: 14px;
+}
+
+.skyean-pag-jump {
+	font-size: 13px;
+	color: #555;
+	white-space: nowrap;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.skyean-jump-input {
+	width: 60px !important;
+	height: 34px;
+	text-align: center;
+	font-size: 13px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 0 5px;
+}
+
+/* Activity log */
+.skyean-log {
+	max-height: 300px;
+	overflow-y: auto;
+	font-family: monospace;
+	font-size: 12px;
+	padding: 10px;
+	background: #1d2327;
+	color: #c3c4c7;
+	border-radius: 6px;
+}
+
+.skyean-log .log-success { color: #68de7c; }
+.skyean-log .log-error { color: #ff6b6b; }
+.skyean-log .log-info { color: #72aee6; }
+.skyean-log .log-entry {
+	padding: 2px 0;
+	border-bottom: 1px solid #2c3338;
+}
+
+/* Spinner */
+.skyean-spinner {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	border: 2px solid #ccc;
+	border-top-color: #0073aa;
+	border-radius: 50%;
+	animation: skyean-spin 0.6s linear infinite;
+}
+
+@keyframes skyean-spin {
+	to { transform: rotate(360deg); }
+}
+
+/* Footer */
+.skyean-footer {
+	text-align: center;
+	padding: 15px 0;
+	font-size: 12px;
+	color: #999;
+}
+
+.skyean-footer a {
+	color: #0073aa;
+	text-decoration: none;
+}
+
+.skyean-footer a:hover {
+	text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 782px) {
+	.skyean-stats { flex-wrap: wrap; }
+	.skyean-stat-card { min-width: 120px; }
+	.skyean-toolbar { flex-direction: column; align-items: stretch; }
+	.skyean-pag-row { flex-direction: column; align-items: center; }
+}
