@@ -3,7 +3,7 @@
  * Plugin Name:       SkyServers EAN Barcode Finder
  * Plugin URI:        https://sky-servers.com/skyservers-ean-barcode-finder/
  * Description:       Automatically search and assign EAN/GTIN barcodes to WooCommerce products by product name using free barcode databases.
- * Version:           1.3.0
+ * Version:           1.3.2
  * Author:            Sky Servers SRL
  * Author URI:        https://sky-servers.com
  * License:           GPL-2.0-or-later
@@ -11,7 +11,7 @@
  * Text Domain:       skyservers-ean-barcode-finder
  * Domain Path:       /languages
  * Requires at least: 5.8
- * Tested up to:      6.9
+ * Tested up to:      7.1
  * Requires PHP:      7.4
  * Requires Plugins:  woocommerce
  * WC requires at least: 7.0
@@ -28,7 +28,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Plugin constants.
  */
-define( 'SKYEAN_VERSION', '1.3.0' );
+define( 'SKYEAN_VERSION', '1.3.2' );
 define( 'SKYEAN_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'SKYEAN_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 define( 'SKYEAN_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );

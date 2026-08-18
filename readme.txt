@@ -2,9 +2,9 @@
 Contributors: skyservers
 Tags: barcode, ean, gtin, upc, product
 Requires at least: 5.8
-Tested up to: 6.9
+Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 1.3.0
+Stable tag: 1.3.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -109,6 +109,13 @@ Yes, the plugin uses WooCommerce's product API when available, which is compatib
 
 == Changelog ==
 
+= 1.3.2 =
+* Compatibility: tested with WordPress 7.1.
+* Fix: internal version constant was left at 1.3.0, which could serve stale admin CSS/JS from browser cache after updates.
+
+= 1.3.1 =
+* Compatibility: tested with WordPress 7.0.
+
 = 1.3.0 =
 * Renamed plugin to SkyServers EAN Barcode Finder for trademark compliance
 * Removed trademarked terms from plugin slug and text domain
@@ -155,6 +162,12 @@ Yes, the plugin uses WooCommerce's product API when available, which is compatib
 * Category and status filtering
 
 == Upgrade Notice ==
+
+= 1.3.2 =
+Compatibility update for WordPress 7.1. No functional changes.
+
+= 1.3.1 =
+Compatibility update for WordPress 7.0. No functional changes.
 
 = 1.3.0 =
 Plugin renamed and slug updated for trademark compliance. No functional changes.
